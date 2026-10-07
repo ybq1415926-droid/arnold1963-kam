@@ -1,0 +1,10 @@
+Arnold 1963 KAM in Lean 4
+Copyright 2026 Bingqi Yu
+
+This project's original source code and repository documentation are
+distributed under the Apache License, Version 2.0. See LICENSE.
+
+The project builds on Lean 4 and mathlib and follows the mathematical work
+of V. I. Arnol'd (1963). Dependencies retain their own licenses and
+attribution notices; their source trees are not bundled in this snapshot.
+See docs/PROVENANCE.md for research attribution and AI assistance.

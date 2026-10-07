@@ -1,0 +1,69 @@
+{
+  "started_utc": "2026-10-07T02:12:43.956816+00:00",
+  "passed": true,
+  "mode": "main-and-audits",
+  "commands": [
+    {
+      "name": "version",
+      "arguments": [
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 8.78
+    },
+    {
+      "name": "build",
+      "arguments": [
+        "--no-cache",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 40.42
+    },
+    {
+      "name": "audit-build",
+      "arguments": [
+        "--no-cache",
+        "build",
+        "KamProject.Arnold1963.Audit.W10",
+        "KamProject.Arnold1963.Audit.W10Entry"
+      ],
+      "exit_code": 0,
+      "seconds": 18.39
+    },
+    {
+      "name": "axioms",
+      "arguments": [
+        "env",
+        "lean",
+        "KamProject/Arnold1963/Audit/W10.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 66.34
+    },
+    {
+      "name": "entry",
+      "arguments": [
+        "env",
+        "lean",
+        "KamProject/Arnold1963/Audit/W10Entry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 40.83
+    }
+  ],
+  "source_count": 191,
+  "snapshot_hashes_match": true,
+  "proof_marker_matches": [],
+  "missing_local_imports": [],
+  "lean_version_output": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "axiom_declaration_count": 32,
+  "axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-10-07T02:15:38.864250+00:00"
+}

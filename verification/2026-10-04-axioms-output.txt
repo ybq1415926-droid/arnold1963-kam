@@ -1,0 +1,62 @@
+'KamProject.Arnold1963.invariant_under_nonresonant_line_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.denseRange_unitTorusLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.denseRange_realTorusLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Iteration.InitialData.projected_orbit_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.eq_of_analytic_autonomous_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.tori_eq_of_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.tori_pairwise_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.goodSet_eq_sUnion_tori' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.torusResult' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.goodSet_volume_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.theorem1Result' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.theorem1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.theorem1_of_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.GlobalHamiltonianData.exists_finiteLocalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.HamiltonianPatch.threshold_eq_initial_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.phase_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.FiniteLocalization.exists_global_orbit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.theorem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.localKAM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W9Example.cubic_original_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W9Example.frequency_not_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W9Example.nonconstant_on_initial_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.result' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.original_data_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_disjoint_tori' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_torus_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_good_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_large_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_bad_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_good_meets_both_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_torus_in_one_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KamProject.Arnold1963.Audit.W10Example.actual_two_branch_tori' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,258 @@
+[
+  {
+    "declaration": "KamProject.Arnold1963.invariant_under_nonresonant_line_constant",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.denseRange_unitTorusLine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.denseRange_realTorusLine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Iteration.InitialData.projected_orbit_closure",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.eq_of_analytic_autonomous_orbits",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.tori_eq_of_intersection",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.tori_pairwise_disjoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.goodSet_eq_sUnion_tori",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.torusResult",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.goodSet_volume_gt",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.theorem1Result",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.theorem1",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.theorem1_of_pointwise",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.GlobalHamiltonianData.exists_finiteLocalization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.HamiltonianPatch.threshold_eq_initial_bound",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.phase_cover",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.FiniteLocalization.exists_global_orbit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.theorem2",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.localKAM",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W9Example.cubic_original_data",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W9Example.frequency_not_injective",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W9Example.nonconstant_on_initial_phase",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.result",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.original_data_threshold",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_disjoint_tori",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_torus_realization",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_good_nonempty",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_large_measure",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_bad_measure",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_good_meets_both_branches",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_torus_in_one_branch",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "declaration": "KamProject.Arnold1963.Audit.W10Example.actual_two_branch_tori",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+ℹ [3728/3734] Replayed KamProject.Arnold1963.Audit.Steps123
+info: KamProject/Arnold1963/Audit/Steps123.lean:82:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.uniformNorm_restrict_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:83:0: 'KamProject.Arnold1963.Audit.cosineExample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:84:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.uniformNorm_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:85:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.norm_pGradient_le_rectangular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:86:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.norm_qGradient_le_rectangular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:87:0: 'KamProject.Arnold1963.norm_le_dim_mul_linearEntries' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:88:0: 'KamProject.Arnold1963.norm_bilinear_le_of_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:89:0: 'KamProject.Arnold1963.threshold5_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:90:0: 'KamProject.Arnold1963.threshold0_budget_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:91:0: 'KamProject.Arnold1963.budget_step_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:92:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.continuous_torusValue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:93:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.fourierCoeff_eq_cubeIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:94:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.fourierCoeff_conj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:95:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.integral_centered_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:96:0: 'KamProject.Arnold1963.norm_normalized_fourierIntegral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:97:0: 'KamProject.Arnold1963.hasSum_exp_indexLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:98:0: 'KamProject.Arnold1963.summable_fourierTerms_of_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:99:0: 'KamProject.Arnold1963.AnalyticPhaseFunction.hasSum_fourier_real_of_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/Steps123.lean:100:0: 'KamProject.Arnold1963.norm_fourierSeries_tail_le_of_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3733/3734] Replayed KamProject.Arnold1963.Audit.W10Entry
+info: KamProject/Arnold1963/Audit/W10Entry.lean:7:0: KamProject.Arnold1963.theorem1 {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  (h : GlobalHamiltonianData n H₀ G) {ρ : ℝ≥0} {κ : ℝ} (hρ : 0 < ρ) (hκ : 0 < κ) :
+  ∃ M, 0 < M ∧ ∀ (f : AnalyticPhaseFunction n G ρ), f.uniformNorm ≤ M → Nonempty (Theorem1Result n H₀ G ρ κ f)
+info: KamProject/Arnold1963/Audit/W10Entry.lean:8:0: KamProject.Arnold1963.theorem1_of_pointwise {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  (h : GlobalHamiltonianData n H₀ G) {ρ : ℝ≥0} {κ : ℝ} (hρ : 0 < ρ) (hκ : 0 < κ) :
+  ∃ M,
+    0 < M ∧
+      ∀ (f : AnalyticPhaseFunction n G ρ),
+        (∀ z ∈ phaseDomain G ρ, ‖f.toFun z‖ < M) → Nonempty (Theorem1Result n H₀ G ρ κ f)
+info: KamProject/Arnold1963/Audit/W10Entry.lean:9:0: KamProject.Arnold1963.Theorem1Result (n : ℕ) (H₀ : ComplexSpace n → ℂ) (G : Set (ComplexSpace n)) (ρ : ℝ≥0) (κ : ℝ)
+  (f : AnalyticPhaseFunction n G ρ) : Type
+info: KamProject/Arnold1963/Audit/W10Entry.lean:10:0: KamProject.Arnold1963.KAMTorus (n : ℕ) (H₀ : ComplexSpace n → ℂ) (H₁ : ComplexPhaseSpace n → ℂ)
+  (ambient : Set (ComplexSpace n)) (r : ℝ≥0) (κ : ℝ) (T : Set (RealPhaseSpace n)) : Type
+info: KamProject/Arnold1963/Audit/W10Entry.lean:11:0: KamProject.Arnold1963.Theorem1Result.pairwise_disjoint {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  {ρ : ℝ≥0} {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) : self.tori.Pairwise Disjoint
+info: KamProject/Arnold1963/Audit/W10Entry.lean:12:0: KamProject.Arnold1963.Theorem1Result.realization {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) (T : Set (RealPhaseSpace n)) :
+  T ∈ self.tori → Nonempty (KAMTorus n H₀ f.toFun G self.width κ T)
+info: KamProject/Arnold1963/Audit/W10Entry.lean:13:0: KamProject.Arnold1963.Theorem1Result.good_large {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) :
+  ENNReal.ofReal (1 - κ) * MeasureTheory.volume (realSlice G ×ˢ Set.univ) < MeasureTheory.volume self.goodSet
+info: KamProject/Arnold1963/Audit/W10Entry.lean:14:0: KamProject.Arnold1963.Theorem1Result.bad_small {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) :
+  MeasureTheory.volume self.badSet < ENNReal.ofReal κ * MeasureTheory.volume (realSlice G ×ˢ Set.univ)
+info: KamProject/Arnold1963/Audit/W10Entry.lean:15:0: KamProject.Arnold1963.Theorem1Result.global_orbits {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  {ρ : ℝ≥0} {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) (z : RealPhaseSpace n) :
+  z ∈ self.goodSet →
+    ∃ γ,
+      torusProjection (realPartPhase (γ 0)) = z ∧
+        (∀ (t : ℝ), HasDerivAt γ (hamiltonianVectorField (fun w ↦ H₀ w.1 + f.toFun w) (γ t)) t) ∧
+          (∀ (t : ℝ), complexifyPhase (realPartPhase (γ t)) = γ t) ∧
+            ∀ (t : ℝ), torusProjection (realPartPhase (γ t)) ∈ self.goodSet
+info: KamProject/Arnold1963/Audit/W10Entry.lean:16:0: KamProject.Arnold1963.FiniteLocalization.tori_eq_of_intersection {n : ℕ} {H₀ : ComplexSpace n → ℂ}
+  {ambient : Set (ComplexSpace n)} {ρ : ℝ≥0} {κ : ℝ} (L : FiniteLocalization n H₀ ambient ρ κ)
+  (f : AnalyticPhaseFunction n ambient ρ) (hf : f.uniformNorm ≤ L.threshold) (c d : ↥L.patches) {p p' : RealSpace n}
+  (hp : p ∈ realSlice (Iteration.InitialData.limitDomain ⋯ (L.data f hf c)))
+  (hp' : p' ∈ realSlice (Iteration.InitialData.limitDomain ⋯ (L.data f hf d))) {z : RealPhaseSpace n}
+  (hz : z ∈ Iteration.InitialData.invariantTorus ⋯ (L.data f hf c) p)
+  (hz' : z ∈ Iteration.InitialData.invariantTorus ⋯ (L.data f hf d) p') :
+  Iteration.InitialData.invariantTorus ⋯ (L.data f hf c) p = Iteration.InitialData.invariantTorus ⋯ (L.data f hf d) p'
+info: KamProject/Arnold1963/Audit/W10Entry.lean:17:0: KamProject.Arnold1963.FiniteLocalization.goodSet_eq_sUnion_tori {n : ℕ} {H₀ : ComplexSpace n → ℂ}
+  {ambient : Set (ComplexSpace n)} {ρ : ℝ≥0} {κ : ℝ} (L : FiniteLocalization n H₀ ambient ρ κ)
+  (f : AnalyticPhaseFunction n ambient ρ) (hf : f.uniformNorm ≤ L.threshold) : L.goodSet f hf = ⋃₀ L.tori f hf
+info: KamProject/Arnold1963/Audit/W10Entry.lean:18:0: KamProject.Arnold1963.Iteration.InitialData.projected_orbit_closure {n : ℕ} {Ω₀ : Set (ComplexSpace n)}
+  {δ₁ θ₀ Θ₀ ρ₀ : ℝ≥0} {κ D : ℝ} (b : Iteration.InitialParameters n δ₁ θ₀ Θ₀ ρ₀ κ D)
+  (h : Iteration.InitialData n Ω₀ δ₁ θ₀ Θ₀ ρ₀ D) {p : RealSpace n}
+  (hp : p ∈ realSlice (Iteration.InitialData.limitDomain b h)) (q : RealSpace n) :
+  closure (Set.range fun t ↦ torusProjection (realPartPhase (Iteration.InitialData.orbit b h p q t))) =
+    Iteration.InitialData.invariantTorus b h p
+info: KamProject/Arnold1963/Audit/W10Entry.lean:19:0: KamProject.Arnold1963.denseRange_realTorusLine {n : ℕ} (v q : RealSpace n)
+  (hnr : ∀ (k : FourierIndex n), k ≠ 0 → ∑ j, ↑(k j) * v j ≠ 0) : DenseRange (realTorusLine v q)
+ℹ [3734/3734] Replayed KamProject.Arnold1963.Audit.W10
+info: KamProject/Arnold1963/Audit/W10.lean:7:0: 'KamProject.Arnold1963.invariant_under_nonresonant_line_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:8:0: 'KamProject.Arnold1963.denseRange_unitTorusLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:9:0: 'KamProject.Arnold1963.denseRange_realTorusLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:10:0: 'KamProject.Arnold1963.Iteration.InitialData.projected_orbit_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:11:0: 'KamProject.Arnold1963.eq_of_analytic_autonomous_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:12:0: 'KamProject.Arnold1963.FiniteLocalization.tori_eq_of_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:13:0: 'KamProject.Arnold1963.FiniteLocalization.tori_pairwise_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:14:0: 'KamProject.Arnold1963.FiniteLocalization.goodSet_eq_sUnion_tori' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:15:0: 'KamProject.Arnold1963.FiniteLocalization.torusResult' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:16:0: 'KamProject.Arnold1963.FiniteLocalization.goodSet_volume_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:17:0: 'KamProject.Arnold1963.FiniteLocalization.theorem1Result' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:18:0: 'KamProject.Arnold1963.theorem1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:19:0: 'KamProject.Arnold1963.theorem1_of_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:20:0: 'KamProject.Arnold1963.GlobalHamiltonianData.exists_finiteLocalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:21:0: 'KamProject.Arnold1963.HamiltonianPatch.threshold_eq_initial_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:22:0: 'KamProject.Arnold1963.FiniteLocalization.phase_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:23:0: 'KamProject.Arnold1963.FiniteLocalization.exists_global_orbit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:24:0: 'KamProject.Arnold1963.theorem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:25:0: 'KamProject.Arnold1963.localKAM' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:26:0: 'KamProject.Arnold1963.Audit.W9Example.cubic_original_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:27:0: 'KamProject.Arnold1963.Audit.W9Example.frequency_not_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:28:0: 'KamProject.Arnold1963.Audit.W9Example.nonconstant_on_initial_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:29:0: 'KamProject.Arnold1963.Audit.W10Example.result' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:30:0: 'KamProject.Arnold1963.Audit.W10Example.original_data_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:31:0: 'KamProject.Arnold1963.Audit.W10Example.actual_disjoint_tori' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:32:0: 'KamProject.Arnold1963.Audit.W10Example.actual_torus_realization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:33:0: 'KamProject.Arnold1963.Audit.W10Example.actual_good_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:34:0: 'KamProject.Arnold1963.Audit.W10Example.actual_large_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:35:0: 'KamProject.Arnold1963.Audit.W10Example.actual_bad_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:36:0: 'KamProject.Arnold1963.Audit.W10Example.actual_good_meets_both_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:37:0: 'KamProject.Arnold1963.Audit.W10Example.actual_torus_in_one_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: KamProject/Arnold1963/Audit/W10.lean:38:0: 'KamProject.Arnold1963.Audit.W10Example.actual_two_branch_tori' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3734 jobs).

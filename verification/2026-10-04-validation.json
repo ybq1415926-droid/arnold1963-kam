@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "version",
+    "ExitCode": 0,
+    "Seconds": 7.46,
+    "Log": "final-review-20261004-version-output.txt",
+    "Arguments": [
+      "env",
+      "lean",
+      "--version"
+    ]
+  },
+  {
+    "Name": "build",
+    "ExitCode": 0,
+    "Seconds": 29.55,
+    "Log": "final-review-20261004-build-output.txt",
+    "Arguments": [
+      "--no-cache",
+      "build"
+    ]
+  },
+  {
+    "Name": "audit-build",
+    "ExitCode": 0,
+    "Seconds": 28.6,
+    "Log": "final-review-20261004-audit-build-output.txt",
+    "Arguments": [
+      "--no-cache",
+      "build",
+      "KamProject.Arnold1963.Audit.W10",
+      "KamProject.Arnold1963.Audit.W10Entry"
+    ]
+  },
+  {
+    "Name": "axioms",
+    "ExitCode": 0,
+    "Seconds": 45.84,
+    "Log": "final-review-20261004-axioms-output.txt",
+    "Arguments": [
+      "env",
+      "lean",
+      "KamProject/Arnold1963/Audit/W10.lean"
+    ]
+  },
+  {
+    "Name": "entry",
+    "ExitCode": 0,
+    "Seconds": 36.55,
+    "Log": "final-review-20261004-entry-output.txt",
+    "Arguments": [
+      "env",
+      "lean",
+      "KamProject/Arnold1963/Audit/W10Entry.lean"
+    ]
+  }
+]

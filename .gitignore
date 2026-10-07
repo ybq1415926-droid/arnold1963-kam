@@ -1,0 +1,8 @@
+/.lake/
+/.elan/
+/.audit-output/
+/tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

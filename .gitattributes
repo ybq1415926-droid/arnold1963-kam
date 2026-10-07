@@ -1,0 +1,9 @@
+# Preserve the bytes of the previously checked Lean snapshot across platforms.
+*.lean -text
+lean-toolchain -text
+lakefile.toml -text
+lake-manifest.json -text
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf

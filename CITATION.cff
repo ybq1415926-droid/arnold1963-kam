@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the specific archived version used, together with its version DOI when available. Final semantic review is pending."
+type: software
+title: "Arnold 1963 KAM in Lean 4"
+authors:
+  - family-names: "Yu"
+    given-names: "Bingqi"
+    affiliation: "Jilin University"
+    orcid: "https://orcid.org/0009-0000-4646-1791"
+version: "0.1.0"
+license: Apache-2.0
+keywords:
+  - Lean 4
+  - mathlib
+  - KAM theory
+  - Hamiltonian dynamics
+  - formal verification
+abstract: >-
+  A Lean 4 and mathlib formalization of the basic nondegenerate analytic
+  Hamiltonian KAM theorem following Arnold (1963), with explicit domain
+  regularity hypotheses. The development constructs the iteration,
+  invariant analytic tori, original Hamiltonian orbits and a large-measure
+  conclusion. This is a preliminary research software snapshot for review;
+  final human assessment of correspondence with the mathematical sources
+  is pending. The development used AI assistance.

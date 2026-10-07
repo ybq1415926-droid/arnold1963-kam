@@ -1,0 +1,51 @@
+KamProject.Arnold1963.theorem1 {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  (h : GlobalHamiltonianData n H₀ G) {ρ : ℝ≥0} {κ : ℝ} (hρ : 0 < ρ) (hκ : 0 < κ) :
+  ∃ M, 0 < M ∧ ∀ (f : AnalyticPhaseFunction n G ρ), f.uniformNorm ≤ M → Nonempty (Theorem1Result n H₀ G ρ κ f)
+KamProject.Arnold1963.theorem1_of_pointwise {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  (h : GlobalHamiltonianData n H₀ G) {ρ : ℝ≥0} {κ : ℝ} (hρ : 0 < ρ) (hκ : 0 < κ) :
+  ∃ M,
+    0 < M ∧
+      ∀ (f : AnalyticPhaseFunction n G ρ),
+        (∀ z ∈ phaseDomain G ρ, ‖f.toFun z‖ < M) → Nonempty (Theorem1Result n H₀ G ρ κ f)
+KamProject.Arnold1963.Theorem1Result (n : ℕ) (H₀ : ComplexSpace n → ℂ) (G : Set (ComplexSpace n)) (ρ : ℝ≥0) (κ : ℝ)
+  (f : AnalyticPhaseFunction n G ρ) : Type
+KamProject.Arnold1963.KAMTorus (n : ℕ) (H₀ : ComplexSpace n → ℂ) (H₁ : ComplexPhaseSpace n → ℂ)
+  (ambient : Set (ComplexSpace n)) (r : ℝ≥0) (κ : ℝ) (T : Set (RealPhaseSpace n)) : Type
+KamProject.Arnold1963.Theorem1Result.pairwise_disjoint {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  {ρ : ℝ≥0} {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) : self.tori.Pairwise Disjoint
+KamProject.Arnold1963.Theorem1Result.realization {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) (T : Set (RealPhaseSpace n)) :
+  T ∈ self.tori → Nonempty (KAMTorus n H₀ f.toFun G self.width κ T)
+KamProject.Arnold1963.Theorem1Result.good_large {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) :
+  ENNReal.ofReal (1 - κ) * MeasureTheory.volume (realSlice G ×ˢ Set.univ) < MeasureTheory.volume self.goodSet
+KamProject.Arnold1963.Theorem1Result.bad_small {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)} {ρ : ℝ≥0}
+  {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) :
+  MeasureTheory.volume self.badSet < ENNReal.ofReal κ * MeasureTheory.volume (realSlice G ×ˢ Set.univ)
+KamProject.Arnold1963.Theorem1Result.global_orbits {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpace n)}
+  {ρ : ℝ≥0} {κ : ℝ} {f : AnalyticPhaseFunction n G ρ} (self : Theorem1Result n H₀ G ρ κ f) (z : RealPhaseSpace n) :
+  z ∈ self.goodSet →
+    ∃ γ,
+      torusProjection (realPartPhase (γ 0)) = z ∧
+        (∀ (t : ℝ), HasDerivAt γ (hamiltonianVectorField (fun w => H₀ w.1 + f.toFun w) (γ t)) t) ∧
+          (∀ (t : ℝ), complexifyPhase (realPartPhase (γ t)) = γ t) ∧
+            ∀ (t : ℝ), torusProjection (realPartPhase (γ t)) ∈ self.goodSet
+KamProject.Arnold1963.FiniteLocalization.tori_eq_of_intersection {n : ℕ} {H₀ : ComplexSpace n → ℂ}
+  {ambient : Set (ComplexSpace n)} {ρ : ℝ≥0} {κ : ℝ} (L : FiniteLocalization n H₀ ambient ρ κ)
+  (f : AnalyticPhaseFunction n ambient ρ) (hf : f.uniformNorm ≤ L.threshold) (c d : ↥L.patches) {p p' : RealSpace n}
+  (hp : p ∈ realSlice (Iteration.InitialData.limitDomain ⋯ (L.data f hf c)))
+  (hp' : p' ∈ realSlice (Iteration.InitialData.limitDomain ⋯ (L.data f hf d))) {z : RealPhaseSpace n}
+  (hz : z ∈ Iteration.InitialData.invariantTorus ⋯ (L.data f hf c) p)
+  (hz' : z ∈ Iteration.InitialData.invariantTorus ⋯ (L.data f hf d) p') :
+  Iteration.InitialData.invariantTorus ⋯ (L.data f hf c) p = Iteration.InitialData.invariantTorus ⋯ (L.data f hf d) p'
+KamProject.Arnold1963.FiniteLocalization.goodSet_eq_sUnion_tori {n : ℕ} {H₀ : ComplexSpace n → ℂ}
+  {ambient : Set (ComplexSpace n)} {ρ : ℝ≥0} {κ : ℝ} (L : FiniteLocalization n H₀ ambient ρ κ)
+  (f : AnalyticPhaseFunction n ambient ρ) (hf : f.uniformNorm ≤ L.threshold) : L.goodSet f hf = ⋃₀ L.tori f hf
+KamProject.Arnold1963.Iteration.InitialData.projected_orbit_closure {n : ℕ} {Ω₀ : Set (ComplexSpace n)}
+  {δ₁ θ₀ Θ₀ ρ₀ : ℝ≥0} {κ D : ℝ} (b : Iteration.InitialParameters n δ₁ θ₀ Θ₀ ρ₀ κ D)
+  (h : Iteration.InitialData n Ω₀ δ₁ θ₀ Θ₀ ρ₀ D) {p : RealSpace n}
+  (hp : p ∈ realSlice (Iteration.InitialData.limitDomain b h)) (q : RealSpace n) :
+  closure (Set.range fun t => torusProjection (realPartPhase (Iteration.InitialData.orbit b h p q t))) =
+    Iteration.InitialData.invariantTorus b h p
+KamProject.Arnold1963.denseRange_realTorusLine {n : ℕ} (v q : RealSpace n)
+  (hnr : ∀ (k : FourierIndex n), k ≠ 0 → ∑ j, ↑(k j) * v j ≠ 0) : DenseRange (realTorusLine v q)

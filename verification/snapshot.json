@@ -1,0 +1,12 @@
+{
+  "prepared_date": "2026-10-07",
+  "historical_validation_date": "2026-10-04",
+  "lean_source_count": 191,
+  "configuration_file_count": 3,
+  "all_194_files_match_historical_baseline": true,
+  "lean": "4.33.1",
+  "mathlib_tag": "v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "semantic_review": "pending",
+  "publication_at_preparation": "not yet published"
+}
