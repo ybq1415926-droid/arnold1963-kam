@@ -2,6 +2,9 @@
 
 本项目公开的是供审阅的研究代码版本。Lean 机器检验已有通过记录，最终人工语义复核仍在进行，尚不声称完成同行评审或确立世界首次形式化。
 
+**已存档版本：**[v0.1.0，DOI：10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478)，发布于 2026 年 10 月 7 日。
+引用这一版本时使用此 DOI；[项目整体 DOI](https://doi.org/10.5281/zenodo.23201477) 指向最新存档版本。
+
 作者：**Bingqi Yu，Jilin University**。
 [ORCID](https://orcid.org/0009-0000-4646-1791) · [GitHub](https://github.com/ybq1415926-droid)。
 开发使用了 AI 辅助，具体分工见 [Provenance](docs/PROVENANCE.md)。
@@ -35,7 +38,9 @@ lake env lean KamProject/Arnold1963/Audit/W10Entry.lean
 
 ## 引用和许可
 
-代码与仓库说明采用 [Apache-2.0](LICENSE)。引用信息见 [CITATION.cff](CITATION.cff)；使用某个存档版本时，请注明该版本及其 DOI。
+代码与仓库说明采用 [Apache-2.0](LICENSE)。引用信息见 [CITATION.cff](CITATION.cff)。本次版本可引用为：
+
+Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23201478
 
 数学原文：V. I. Arnol'd, Russian Mathematical Surveys **18**(5), 9–36 (1963)，
 [DOI](https://doi.org/10.1070/RM1963v018n05ABEH004130)。

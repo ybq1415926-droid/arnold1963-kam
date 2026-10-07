@@ -2,6 +2,10 @@
 
 **Preliminary research software for public review. Final human semantic review is pending.**
 
+**Archived release:** [v0.1.0 — DOI: 10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478),
+published 7 October 2026. For reproducible citation, use this version DOI.
+The [all-versions DOI](https://doi.org/10.5281/zenodo.23201477) resolves to the latest archived version.
+
 This project formalizes a version of the basic nondegenerate analytic Hamiltonian
 KAM theorem following Arnold (1963), using Lean 4 and mathlib. It constructs the
 iteration, invariant analytic tori, orbits of the original Hamiltonian, and a
@@ -100,4 +104,7 @@ Russian Mathematical Surveys **18**(5), 9–36 (1963).
 
 Original project code and repository documentation: [Apache-2.0](LICENSE).
 Dependencies retain their own licenses. Please cite the exact version used via
-[CITATION.cff](CITATION.cff), including its archived version DOI when available.
+[CITATION.cff](CITATION.cff). Citation for the archived release:
+
+Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v0.1.0) [Computer software].
+Zenodo. https://doi.org/10.5281/zenodo.23201478
