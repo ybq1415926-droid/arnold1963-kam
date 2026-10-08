@@ -1,6 +1,9 @@
 # Release notes
 
-## v1.0.0 — prepared for release
+## v1.0.0 — 2026-10-08
+
+Archived source commit: `7985c9b`.
+Version DOI: [10.5281/zenodo.23232025](https://doi.org/10.5281/zenodo.23232025).
 
 This version documents the author's completed semantic self-review of the
 explicitly stated KAM theorem, including the audit examples.
@@ -17,8 +20,9 @@ explicitly stated KAM theorem, including the audit examples.
 
 No Lean statements, proofs, toolchain versions or dependency versions were
 changed. The review status is author self-review, not independent review or
-peer-review certification. The version DOI and release date will be recorded
-after archival. This section does not assert that v1.0.0 is already published.
+peer-review certification. The release commit passed GitHub Actions before
+publication. DOI and publication-status updates on the main branch do not alter
+the archived v1.0.0 source snapshot.
 
 ## v0.1.0 — historical preparation record
 

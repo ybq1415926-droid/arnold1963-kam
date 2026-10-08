@@ -42,7 +42,8 @@ The first public version, v0.1.0, was released and archived on 2026-10-07 as a
 snapshot exported from a local development tree. Its public Git history is not
 presented as the complete development history.
 
-The v1.0.0 preparation updates the mathematical statement document, review status
-and documentation. The Lean statements and proofs are unchanged. The earlier
-archived version remains available. Later changes to formal statements or proofs
+The v1.0.0 release updates the mathematical statement document, review status
+and documentation. The Lean statements and proofs are unchanged. It was published on 2026-10-08 from commit `7985c9b`, with
+[version DOI 10.5281/zenodo.23232025](https://doi.org/10.5281/zenodo.23232025).
+The earlier archived version remains available. Later changes to formal statements or proofs
 should be described in the release notes.

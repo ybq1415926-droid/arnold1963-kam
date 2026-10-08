@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the specific archived version used. This metadata prepares v1.0.0; its version DOI and release date will be added after archival. Author self-review is complete; independent peer-review certification is not claimed."
+message: "Please cite the archived v1.0.0 release using the version DOI below. Author self-review is complete; independent peer-review certification is not claimed."
 type: software
 title: "Arnold 1963 KAM in Lean 4"
 authors:
@@ -8,8 +8,10 @@ authors:
     affiliation: "Jilin University"
     orcid: "https://orcid.org/0009-0000-4646-1791"
 version: "1.0.0"
+doi: "10.5281/zenodo.23232025"
+date-released: "2026-10-08"
 repository-code: "https://github.com/ybq1415926-droid/arnold1963-kam"
-url: "https://github.com/ybq1415926-droid/arnold1963-kam"
+url: "https://doi.org/10.5281/zenodo.23232025"
 license: Apache-2.0
 keywords:
   - Lean 4

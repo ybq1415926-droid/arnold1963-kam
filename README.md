@@ -1,12 +1,15 @@
 # Arnold 1963 KAM in Lean 4
 
-**Author-reviewed release preparation for v1.0.0.** The author has completed
+**Author-reviewed release v1.0.0, published 8 October 2026.** The author has completed
 semantic self-review against the explicit mathematical statement, including the
 audit examples. This is author self-review, not independent peer review.
 
+**Current archived release:** [v1.0.0 — DOI: 10.5281/zenodo.23232025](https://doi.org/10.5281/zenodo.23232025),
+published 8 October 2026, source commit `7985c9b`.
+
 **Previous archived release:** [v0.1.0 — DOI: 10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478),
 published 7 October 2026. The [all-versions DOI](https://doi.org/10.5281/zenodo.23201477)
-identifies the version series. The v1.0.0 version DOI will be added after archival.
+identifies the version series. Cite the version DOI for the exact archived release used.
 
 This project formalizes a version of the basic nondegenerate analytic Hamiltonian
 KAM theorem in Lean 4 and mathlib, developed with reference to Arnold (1963).
@@ -96,7 +99,7 @@ public source commit `0e1151b` also passed the GitHub Actions build and axiom au
 On 2026-10-08, the example-related build targets passed locally, and a fresh W10
 invocation checked all 32 expected axiom declarations. A direct W9Example check
 passed after retrying a toolchain-file read failure. The v1.0.0 release commit
-must pass its own CI run before publication.
+`7985c9b` passed its GitHub Actions workflow before publication.
 
 The 32 audited declarations recursively depend only on `propext`,
 `Classical.choice` and `Quot.sound`. The source scan finds no `sorry`, `admit`,
@@ -129,7 +132,7 @@ Russian Mathematical Surveys **18**(5), 9–36 (1963).
 
 Original project code and repository documentation: [Apache-2.0](LICENSE).
 Dependencies retain their own licenses. Please cite the exact version used via
-[CITATION.cff](CITATION.cff). Historical citation for v0.1.0:
+[CITATION.cff](CITATION.cff). Citation for v1.0.0:
 
-Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v0.1.0) [Computer software].
-Zenodo. https://doi.org/10.5281/zenodo.23201478
+Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v1.0.0) [Computer software].
+Zenodo. https://doi.org/10.5281/zenodo.23232025

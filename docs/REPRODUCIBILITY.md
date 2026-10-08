@@ -73,10 +73,10 @@ is `main-and-audits`, not `all-modules`.
 
 The GitHub workflow sets up the pinned Lean environment, obtains the mathlib
 cache, and runs the all-module script. It passed for the initial public source
-commit `0e1151b`. The new release commit must pass its own workflow before
-publication; an earlier successful run does not certify a later commit.
+commit `0e1151b` and for the v1.0.0 source commit `7985c9b` before publication.
+Later commits should be checked through their own workflow runs.
 
-The GitHub release tag and citation metadata identify the prepared release as
+The GitHub release tag and citation metadata identify the archived release as
 v1.0.0. The Lake package version remains 0.1.0 to preserve the checked build
 configuration; it is separate from the release tag. No toolchain or dependency
 version change is part of this documentation update.

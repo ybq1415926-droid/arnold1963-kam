@@ -52,9 +52,10 @@ Using the existing Lean 4.33.1 installation:
 - A direct W9Example check passed on retry. The first attempt encountered a
   toolchain-file read failure; the file existed, and no reinstallation was performed.
 
-These checks were not a clean rebuild from downloaded dependencies. The release
-commit should additionally pass its own GitHub Actions workflow. The prior
-archived checks remain in [verification](../verification/).
+These checks were not a clean rebuild from downloaded dependencies. The v1.0.0
+source commit `7985c9b` subsequently passed its GitHub Actions workflow and was
+archived on 2026-10-08 at [DOI 10.5281/zenodo.23232025](https://doi.org/10.5281/zenodo.23232025).
+The prior archived checks remain in [verification](../verification/).
 
 ## Novelty scope
 

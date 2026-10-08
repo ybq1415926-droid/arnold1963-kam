@@ -1,9 +1,11 @@
 # Arnold 1963 KAM 的 Lean 4 形式化
 
-本项目正在准备发布 v1.0.0。作者已按照明确的自然语言定理完成主体语义自查及审计实例核对。项目已有 Lean 构建与公理审计通过记录；作者自查不等同于独立人工复核或正式同行评审。
+本项目 v1.0.0 已于 2026 年 10 月 8 日发布并归档。作者已按照明确的自然语言定理完成主体语义自查及审计实例核对。项目已有 Lean 构建与公理审计通过记录；作者自查不等同于独立人工复核或正式同行评审。
+
+**当前存档版本：**[v1.0.0，DOI：10.5281/zenodo.23232025](https://doi.org/10.5281/zenodo.23232025)，发布于 2026 年 10 月 8 日，对应源码提交 `7985c9b`。
 
 **上一存档版本：**[v0.1.0，DOI：10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478)，发布于 2026 年 10 月 7 日。
-[项目整体 DOI](https://doi.org/10.5281/zenodo.23201477) 标识整个版本系列。v1.0.0 的版本 DOI 将在存档后补充。
+[项目整体 DOI](https://doi.org/10.5281/zenodo.23201477) 标识整个版本系列。引用具体版本时请使用对应的版本 DOI。
 
 作者：**Bingqi Yu，Jilin University**。
 [ORCID](https://orcid.org/0009-0000-4646-1791) · [GitHub](https://github.com/ybq1415926-droid)。
@@ -40,13 +42,13 @@ lake env lean KamProject/Arnold1963/Audit/W10Entry.lean
 
 初始公开源码提交 `0e1151b` 已通过 GitHub Actions 的构建和公理审计。2026-10-08 的本地复查再次通过实例相关构建，并重新运行 W10 审计，核对全部 32 条预期声明。W9Example 的直接检查在一次工具链文件读取失败后单独重试通过。
 
-作者已按当前明确陈述的定理完成语义自查及审计实例核对。实例使用一自由度、全局频率不单射的双分支模型和非恒定扰动，证明两侧各有非空不交环面；它不替代一般维数定理的证明，也不是多自由度小除数现象的实例展示。详见[审核状态与证据](docs/REVIEW_STATUS.md)。准备发布的 v1.0.0 提交仍应通过其对应的 CI 检查。
+作者已按当前明确陈述的定理完成语义自查及审计实例核对。实例使用一自由度、全局频率不单射的双分支模型和非恒定扰动，证明两侧各有非空不交环面；它不替代一般维数定理的证明，也不是多自由度小除数现象的实例展示。详见[审核状态与证据](docs/REVIEW_STATUS.md)。v1.0.0 对应提交 `7985c9b` 已在发布前通过 GitHub Actions 检查。
 
 ## 引用和许可
 
-代码与仓库说明采用 [Apache-2.0](LICENSE)。引用信息见 [CITATION.cff](CITATION.cff)。旧版本 v0.1.0 的引用为：
+代码与仓库说明采用 [Apache-2.0](LICENSE)。引用信息见 [CITATION.cff](CITATION.cff)。v1.0.0 的引用为：
 
-Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23201478
+Bingqi Yu. (2026). *Arnold 1963 KAM in Lean 4* (v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23232025
 
 数学原文：V. I. Arnol'd, Russian Mathematical Surveys **18**(5), 9–36 (1963)，
 [DOI](https://doi.org/10.1070/RM1963v018n05ABEH004130)。
