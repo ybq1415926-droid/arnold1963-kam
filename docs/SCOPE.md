@@ -1,9 +1,14 @@
 # Mathematical scope and review map
 
-The target is the basic nondegenerate analytic Hamiltonian KAM theorem in
-Arnold (1963), §§2–4. This is a preliminary formalization snapshot with final
-human semantic review pending. The Lean definitions below specify precisely
-what is proved, including the adopted domain regularity conditions.
+The target is a version of the basic nondegenerate analytic Hamiltonian KAM
+theorem, developed with reference to Arnold (1963). The explicit Lean hypotheses
+and conclusions define the scope. Equivalence with the full range of assumptions
+or auxiliary results in the original paper is not claimed.
+
+The author has completed semantic self-review against the
+[English theorem statement](Arnold1963_Main_Theorem_Code_Aligned_EN.pdf), including
+the audit examples. See [Review status and evidence](REVIEW_STATUS.md).
+Independent review and peer-review certification are not claimed.
 
 ## Inputs
 
@@ -22,9 +27,9 @@ requires:
 Compactness implies finite real action volume; the nonempty open subset implies
 positive real action volume. These are derived consequences. This interface does
 not claim that arbitrary open domains or arbitrary compact sets automatically
-satisfy these conditions. The compact-domain convention follows §4.5; the
-explicit real-slice regularity conditions are adopted from the project's
-revised working proof, and are visible in the formal statement.
+satisfy these conditions. The compact-domain and real-slice regularity
+requirements are explicit assumptions of this theorem, without a claim of
+equivalence with the original paper's full set of assumptions.
 
 [`AnalyticPhaseFunction`](../KamProject/Arnold1963/Basic/Functions.lean)
 requires analyticity on neighborhoods of the specified phase domain,
@@ -33,12 +38,16 @@ Its `uniformNorm` is the supremum norm on the domain, not on the entire ambient
 space. In `theorem1`, `ρ > 0` and `κ > 0`; a positive threshold `M` is chosen
 before the arbitrary perturbation with `uniformNorm ≤ M`.
 
+The width `ρ` and tolerance `κ` are prescribed before the perturbation. The
+threshold may depend on both, together with the fixed unperturbed data, but not
+on the perturbation.
+
 ## Outputs
 
 [`Theorem1Result`](../KamProject/Arnold1963/Main/Theorem1.lean) provides a partition
 of `realSlice G × RealTorus n` into a compact good set and a measurable bad set.
 The good set has positive volume and volume strictly greater than
-`(1 − κ)` times the initial physical phase volume. The bad set has volume
+`max(1 − κ, 0)` times the initial physical phase volume. The bad set has volume
 strictly less than `κ` times that volume. The informative relative-measure
 regime is `0 < κ < 1`, although the formal interface accepts all `κ > 0`.
 
@@ -50,6 +59,10 @@ inverse. Its frequency has no nonzero integer relation and equals the original
 unperturbed frequency at an output center. Both displacement blocks are `< κ`.
 For every real time, the lifted linear motion solves the original perturbed
 Hamiltonian equation and remains on the torus.
+
+The final interface does not additionally assert a quantitative Diophantine
+bound or a Lagrangian property. Distinct torus sets are not required to have
+distinct frequencies.
 
 The common positive analytic width is an output bounded by the input width;
 it is not asserted to equal the original width. Analyticity is in the angle
@@ -99,15 +112,21 @@ generality: some are replaced by specialized results sufficient for this proof.
 The isoenergetic extension, degenerate cases and the rigid-body application in
 §5 are outside this snapshot's claims.
 
-## Review requests
+## Review and examples
 
-Priority review points are the exact domain assumptions, the original-to-formal
-statement correspondence, norm conversions, indexing and tail budgets,
-physical volume normalization, and the scope of the analytic torus output.
-For a finding, record the declaration, expected natural-language statement,
-source section, and whether it concerns the hypotheses, conclusion or proof.
+The author has reviewed the correspondence between the explicit mathematical
+statement and the Lean interface, including domain assumptions, norms, indexing,
+measure normalization and torus output. Further independent review is welcome.
+Findings should identify the declaration and expected mathematical meaning.
 
-The nonconstant two-branch example in
-[`Audit/W10Branches.lean`](../KamProject/Arnold1963/Audit/W10Branches.lean)
-provides an instantiated output with two nonempty disjoint tori. It is a useful
-nonvacuity check, not a replacement for review of the general theorem.
+The example in [`Audit/W9Example.lean`](../KamProject/Arnold1963/Audit/W9Example.lean)
+uses `H₀(p) = p³/3` on two complex disks around `+1` and `−1`, with a nonconstant
+small angle perturbation. Its frequency map is not globally injective.
+[`Audit/W10Example.lean`](../KamProject/Arnold1963/Audit/W10Example.lean) applies the
+main construction to these inputs. [`Audit/W10Branches.lean`](../KamProject/Arnold1963/Audit/W10Branches.lean)
+proves that the actual good set meets both branches and contains at least two
+nonempty disjoint tori, one in each branch.
+
+This is a one-degree-of-freedom example. It checks nonvacuity and multiple
+frequency branches; it does not independently test higher-dimensional
+small-divisor phenomena or replace review of the general theorem.

@@ -1,4 +1,30 @@
-# Version 0.1.0 candidate
+# Release notes
+
+## v1.0.0 — prepared for release
+
+This version documents the author's completed semantic self-review of the
+explicitly stated KAM theorem, including the audit examples.
+
+- Added the English mathematical statement as PDF and LaTeX source.
+- Clarified the domain assumptions and the relationship to Arnold (1963).
+- Clarified that the threshold may depend on the prescribed width and measure
+  tolerance, but not on the perturbation.
+- Recorded the nonresonance conclusion and limits of the torus specification.
+- Documented the nonconstant one-dimensional, two-branch example and its limits.
+- Recorded the 2026-10-08 local example checks and 32-declaration axiom audit.
+- Added a qualified novelty assessment distinguishing complete formal proofs
+  from unproved statements and computer-assisted numerical applications.
+
+No Lean statements, proofs, toolchain versions or dependency versions were
+changed. The review status is author self-review, not independent review or
+peer-review certification. The version DOI and release date will be recorded
+after archival. This section does not assert that v1.0.0 is already published.
+
+## v0.1.0 — historical preparation record
+
+The following describes the preparation state of v0.1.0. That version was
+subsequently published on 2026-10-07 and archived at
+[DOI 10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478).
 
 Prepared on 2026-10-07 for public review; this preparation date is not an asserted
 publication date. Final human semantic review is pending.

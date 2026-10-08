@@ -9,7 +9,9 @@ The development used AI assistance through OpenAI's Codex. The human researcher
 provided the mathematical objective, sources, staged direction and semantic
 feedback; AI assistance produced and revised Lean code, invoked local checks
 and prepared reports. The human researcher retains responsibility for the
-mathematical claims and release. Final human semantic acceptance is pending.
+mathematical claims and release. The author has completed semantic self-review
+against the explicit theorem statement, including the audit examples. This does
+not constitute independent human review or peer-review certification.
 The AI tool is disclosed here as a development tool, not listed as a human author.
 
 The mathematical source is V. I. Arnol'd, *Proof of a theorem of A. N. Kolmogorov
@@ -36,7 +38,11 @@ specific archived version and version DOI once issued. No publication date or
 DOI is asserted before an actual release. Local build dates and source hashes
 are not public release dates.
 
-The first public version will be a snapshot exported from a local development
-tree. It does not present a newly initialized public Git history as the complete
-history of the research. Later corrections should be released under new version
-tags, retaining the original archived version and documenting statement changes.
+The first public version, v0.1.0, was released and archived on 2026-10-07 as a
+snapshot exported from a local development tree. Its public Git history is not
+presented as the complete development history.
+
+The v1.0.0 preparation updates the mathematical statement document, review status
+and documentation. The Lean statements and proofs are unchanged. The earlier
+archived version remains available. Later changes to formal statements or proofs
+should be described in the release notes.

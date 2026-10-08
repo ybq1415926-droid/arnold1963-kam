@@ -62,7 +62,7 @@ included. Historical command summaries refer to original log names; not all
 verbose build logs are bundled, because they include machine-specific paths.
 Those summaries are author-supplied records, not an independent reproduction.
 
-The public candidate's sources and version files match that historical baseline
+The current Lean sources and version configuration files match that historical baseline
 byte for byte. On 2026-10-07, the default build, W10 audit build and both direct
 Lean audit invocations passed again in the existing Windows working checkout,
 using its installed toolchain and dependencies. The candidate copy separately
@@ -72,11 +72,18 @@ or an independent build on another machine. See
 is `main-and-audits`, not `all-modules`.
 
 The GitHub workflow sets up the pinned Lean environment, obtains the mathlib
-cache, and runs the all-module script. A green remote CI result must be obtained
-after upload; a workflow file alone is not a successful remote run.
+cache, and runs the all-module script. It passed for the initial public source
+commit `0e1151b`. The new release commit must pass its own workflow before
+publication; an earlier successful run does not certify a later commit.
+
+The GitHub release tag and citation metadata identify the prepared release as
+v1.0.0. The Lake package version remains 0.1.0 to preserve the checked build
+configuration; it is separate from the release tag. No toolchain or dependency
+version change is part of this documentation update.
 
 A text scan is conservative and is not a Lean parser. The 32-declaration axiom
 audit follows dependencies recursively from those declarations; it is not an
 enumeration of every declaration in every file. Compilation establishes the
-formal statements under their formal assumptions. The mathematical scope and
-pending semantic review are stated in [Scope](SCOPE.md).
+formal statements under their formal assumptions. The mathematical scope is
+stated in [Scope](SCOPE.md). The completed author self-review, audit-example
+checks and their limitations are described in [Review status](REVIEW_STATUS.md).

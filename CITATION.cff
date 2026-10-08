@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the archived v0.1.0 release using the version DOI below. Final semantic review is pending."
+message: "Please cite the specific archived version used. This metadata prepares v1.0.0; its version DOI and release date will be added after archival. Author self-review is complete; independent peer-review certification is not claimed."
 type: software
 title: "Arnold 1963 KAM in Lean 4"
 authors:
@@ -7,11 +7,9 @@ authors:
     given-names: "Bingqi"
     affiliation: "Jilin University"
     orcid: "https://orcid.org/0009-0000-4646-1791"
-version: "0.1.0"
-doi: "10.5281/zenodo.23201478"
-date-released: "2026-10-07"
+version: "1.0.0"
 repository-code: "https://github.com/ybq1415926-droid/arnold1963-kam"
-url: "https://doi.org/10.5281/zenodo.23201478"
+url: "https://github.com/ybq1415926-droid/arnold1963-kam"
 license: Apache-2.0
 keywords:
   - Lean 4
@@ -20,10 +18,13 @@ keywords:
   - Hamiltonian dynamics
   - formal verification
 abstract: >-
-  A Lean 4 and mathlib formalization of the basic nondegenerate analytic
-  Hamiltonian KAM theorem following Arnold (1963), with explicit domain
-  regularity hypotheses. The development constructs the iteration,
-  invariant analytic tori, original Hamiltonian orbits and a large-measure
-  conclusion. This is a preliminary research software snapshot for review;
-  final human assessment of correspondence with the mathematical sources
-  is pending. The development used AI assistance.
+  A Lean 4 and mathlib formalization of a basic nondegenerate analytic
+  Hamiltonian KAM theorem, developed with reference to Arnold (1963)
+  under explicit domain regularity assumptions. The development constructs
+  the iteration, analytic invariant tori, trajectories of the original
+  Hamiltonian for all real time, and a large-measure conclusion, without
+  assuming a globally injective frequency map. The author has completed
+  semantic self-review against the explicit mathematical statement,
+  including the audit examples. Independent review and peer-review
+  certification are not claimed. Equivalence with the full scope of the
+  original paper is not asserted. The development used AI assistance.
