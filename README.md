@@ -1,16 +1,14 @@
 # Arnold 1963 KAM in Lean 4
 
-**Preliminary research software for public review. Final human semantic review is pending.**
+The author has completed the main semantic self-review against the explicit theorem statement. Review of the audit examples remains pending. This is not an independent review or peer-review certification.
 
 **Archived release:** [v0.1.0 — DOI: 10.5281/zenodo.23201478](https://doi.org/10.5281/zenodo.23201478),
 published 7 October 2026. For reproducible citation, use this version DOI.
 The [all-versions DOI](https://doi.org/10.5281/zenodo.23201477) resolves to the latest archived version.
 
-This project formalizes a version of the basic nondegenerate analytic Hamiltonian
-KAM theorem following Arnold (1963), using Lean 4 and mathlib. It constructs the
-iteration, invariant analytic tori, orbits of the original Hamiltonian, and a
-large-measure conclusion. The exact domain regularity assumptions and output
-specification are part of the theorem; see [Scope and assumptions](docs/SCOPE.md).
+This project formalizes a version of the basic nondegenerate analytic Hamiltonian KAM theorem in Lean 4 and mathlib, developed with reference to Arnold (1963). The theorem uses the explicit hypotheses and conclusions stated in the current Lean interface; equivalence with the full scope of Arnold's original statement is not claimed. The development constructs the iteration, analytic invariant tori, trajectories of the original Hamiltonian, and a large-measure conclusion.
+
+See the [English theorem statement](docs/Arnold1963_Main_Theorem_Code_Aligned_EN.tex) and [Scope and assumptions](docs/SCOPE.md).
 
 **Author:** Bingqi Yu, Jilin University —
 [ORCID](https://orcid.org/0009-0000-4646-1791) ·
@@ -33,10 +31,7 @@ theorem theorem1 {n : ℕ} {H₀ : ComplexSpace n → ℂ} {G : Set (ComplexSpac
       f.uniformNorm ≤ M → Nonempty (Theorem1Result n H₀ G ρ κ f)
 ```
 
-The positive threshold is chosen before the perturbation. The output contains a
-compact positive-measure good set, a measurable small complement, pairwise
-disjoint analytic invariant tori, and global real-time Hamiltonian orbits.
-It does not assume a globally injective frequency map.
+The positive threshold is chosen before the perturbation. It may depend on the fixed unperturbed Hamiltonian and domain data, the prescribed complex angle width ρ, and the prescribed measure tolerance κ, but not on the perturbation. The output contains a compact positive-measure good set, a measurable small complement, pairwise disjoint analytic invariant tori, and trajectories satisfying the original perturbed Hamiltonian equation for every real time. A globally injective frequency map is not assumed. The final torus interface asserts the absence of nonzero integer relations; no additional quantitative Diophantine bound or Lagrangian property is claimed here.
 
 Read these definitions together with the theorem:
 
@@ -72,9 +67,7 @@ snapshot hashes, exact checks and their limits are described in
 191-module build. The public candidate preserves all 191 Lean files and the three
 version configuration files byte for byte against that baseline.
 
-On 2026-10-07, the default project build and W10 audits passed again in the
-existing Windows checkout. The copied candidate passed hash and import checks;
-remote CI remains to be run after publication.
+On 2026-10-07, the default project build and W10 audits passed again in the existing Windows checkout. The copied candidate passed hash and import checks. The GitHub Actions build and axiom audit also passed for the initial public source commit 0e1151b. These are validation records for that source snapshot; subsequent commits should be checked through their own workflow runs.
 
 The 32 audited declarations recursively depend only on `propext`,
 `Classical.choice` and `Quot.sound`. The source scan finds no `sorry`, `admit`,
